@@ -7,10 +7,17 @@ The main purpose of this analysis is to help Bobby to get the number of employee
 
 Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
-retirement_titles.png,
-unique_titles.png,
-retiring_titles.png,
-mentorship_eligibilty.png
+### Retirement Titles Table
+![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles.png)
+
+### Unique Titles Table
+![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/unique_titles.png)
+
+### Retiring Titles Table
+![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/retiring_titles.png)
+
+### Mentorship Eligibility Table
+![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/mentorship_eligibilty.png)
 
 Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
