@@ -31,19 +31,14 @@ SELECT * FROM unique_titles;
 SELECT distinct title FROM unique_titles;
 
 --create a Retiring Titles table that contains the number of titles filled by employees who are retiring
-CREATE TABLE retiring_titles(
-	count bigint,
-	title VARCHAR(50)
-);
-
-SELECT * FROM retiring_titles;
-
 SELECT count(emp_no),title
+INTO retiring_titles
 FROM unique_titles
 GROUP BY title
 ORDER BY count DESC;
 
 --Deliverable 2
+--Find out how many retiring employees are eligible for mentorship.
 SELECT emp_no,
 first_name,
 last_name,
