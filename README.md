@@ -3,14 +3,14 @@
 
 Overview of the analysis: Explain the purpose of this analysis.
 
-The main purpose of this analysis is to help Booby to get the number of employees retiring from each department of Pwelett-Hackard so that there is no gap of human intellectual resources in the company.
+The main purpose of this analysis is to help Bobby to get the number of employees retiring from each department of Pwelett-Hackard and find how many of them eligible for mentorship of the new employees so that there is no gap of human intellectual resources in the company.
 
 Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 
-retirement_titles.csv,
-unique_titles.csv,
-retiring_titles.csv,
-and mentorship_eligibilty.csv
+retirement_titles.png,
+unique_titles.png,
+retiring_titles.png,
+mentorship_eligibilty.png
 
 Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
