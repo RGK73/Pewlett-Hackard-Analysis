@@ -17,9 +17,9 @@ SELECT * FROM retirement_titles;
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (emp_no) emp_no,
-first_name,
-last_name,
-title
+	first_name,
+	last_name,
+	title
 INTO unique_titles
 FROM retirement_titles
 WHERE to_date = '9999-01-01'
@@ -40,30 +40,28 @@ ORDER BY count DESC;
 --Deliverable 2
 --Find out how many retiring employees are eligible for mentorship.
 SELECT emp_no,
-first_name,
-last_name,
-birth_date
+	first_name,
+	last_name,
+	birth_date
 FROM employees;
 
-SELECT from_date,
-to_date
-FROM dept_emp;
+SELECT from_date,to_date FROM dept_emp;
 
 SELECT title FROM titles;
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT distinct on(e.emp_no)e.emp_no,
-    e.first_name,
+	e.first_name,
 	e.last_name,
-    e.birth_date,
-    de.to_date,
+	e.birth_date,
+	de.to_date,
 	t.title
 INTO mentorship_eligibilty
 FROM employees AS e
-	INNER JOIN dept_emp AS de
-		ON (e.emp_no = de.emp_no)
-	INNER JOIN titles AS t
-		ON (e.emp_no = t.emp_no)
+JOIN dept_emp AS de
+ON (e.emp_no = de.emp_no)
+JOIN titles AS t
+ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
-	AND (de.to_date = '9999-01-01')
+AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
