@@ -50,7 +50,7 @@ SELECT from_date,to_date FROM dept_emp;
 SELECT title FROM titles;
 
 -- Use Dictinct with Orderby to remove duplicate rows
-SELECT distinct on(e.emp_no)e.emp_no,
+SELECT DISTINCT ON(e.emp_no)e.emp_no,
 	e.first_name,
 	e.last_name,
 	e.birth_date,
@@ -65,3 +65,33 @@ ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
+
+--Creating a unique table for further analysis
+-- It consists of emp_no,first_name,last_name,title,from_date,to_date,salary,dept_no, and dept_name of all the retiring employees of Pewlett-Hackard
+SELECT DISTINCT e.emp_no,
+	e.first_name,
+	e.last_name,
+	t.title,
+	t.from_date,
+	t.to_date,
+	sl.salary,
+	de.dept_no,
+	d.dept_name
+INTO unique_table
+FROM employees AS e
+INNER JOIN titles AS t
+ON e.emp_no = t.emp_no
+INNER JOIN salaries as sl
+ON e.emp_no = sl.emp_no
+INNER JOIN dept_emp as de
+ON e.emp_no = de.emp_no AND de.to_date='9999-01-01'
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31' AND t.to_date='9999-01-01')
+ORDER BY e.emp_no;
+
+--Finding out how many employees are retiring from each department and what are the titles of those employees.
+select dept_name,title,count(*)
+from unique_table
+group by dept_name, title
+order by dept_name, title;
