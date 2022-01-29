@@ -43,7 +43,7 @@ How many roles will need to be filled as the "silver tsunami" begins to make an 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 - No.From the analysis we found that there are 1549 employees eligible for training and mentorship program which not at all enough for the silver tsunami of the retirees. It's for every 47 new employees, just 1 mentor! It is clearly inadequate.
-To fugure out more about the "Silver Tsunami" , in depth analysis has to done. So we created unique table. It consists of emp_no,first_name,last_name,title,from_date,to_date,salary,dept_no, and dept_name of all the retiring employees of Pewlett-Hackard.
+To fugure out more about the "Silver Tsunami" , in depth analysis has to done. So we created unique table. As shown below:
 
 ![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/Unique_Table.png)
 
