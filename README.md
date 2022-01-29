@@ -45,6 +45,12 @@ Are there enough qualified, retirement-ready employees in the departments to men
 - No.From the analysis we found that there are 1549 employees eligible for training and mentorship program which not at all enough for the silver tsunami of the retirees. It's for every 47 new employees, just 1 mentor! It is clearly inadequate.
 To fugure out more about the "Silver Tsunami" , in depth analysis has to done. So we created unique table. It consists of emp_no,first_name,last_name,title,from_date,to_date,salary,dept_no, and dept_name of all the retiring employees of Pewlett-Hackard.
 
+![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/Unique_Table.png)
 
+After going through the table , we further sorted out how many employees are retiring from each department and what are the titles of those employees. This gave us the general idea of where new human resources are required the most.
 
+![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/per_dept_titles.png)
+
+From this table, we found out that the highest number of employees are 'Senior Engineers' from 'Developement'(11644), 'Senior Engineers' from 'Production' (10189), and 'Senior Staff' from 'Sales'(8685)! 
+It will help Booby to have all this information ready for his manager.
 
