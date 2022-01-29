@@ -52,5 +52,10 @@ After going through the table , we further sorted out how many employees are ret
 ![alt_text](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/per_dept_titles.png)
 
 From this table, we found out that the highest number of employees are 'Senior Engineers' from 'Developement'(11644), 'Senior Engineers' from 'Production' (10189), and 'Senior Staff' from 'Sales'(8685)! 
-It will help Booby to have all this information ready for his manager.
+It will help Booby to have all this information ready for his manager. Now to further evaluate , we have calculated average salary per department per title as follows:
 
+![alt_temp](https://github.com/RGK73/Pewlett-Hackard-Analysis/blob/main/Images/Average_salary.png)
+
+This will give Bobby's manager the general idea of budget for the new recruits.
+
+All in all, Bobby's manager have most the data regarding 'Silver Tsunami' to take decisions for Pewlett-Hackard company and it's future.
