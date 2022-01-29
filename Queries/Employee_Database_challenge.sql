@@ -91,7 +91,13 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31' AND t.to_date='9999-01
 ORDER BY e.emp_no;
 
 --Finding out how many employees are retiring from each department and what are the titles of those employees.
-select dept_name,title,count(*)
-from unique_table
-group by dept_name, title
-order by dept_name, title;
+SELECT dept_name,title,COUNT(*)
+FROM unique_table
+GROUP BY dept_name, title
+ORDER BY dept_name, title;
+
+--Avareage salary per department per title
+SELECT dept_name,title,COUNT(*),round(avg(salary),2)
+FROM unique_table
+GROUP BY dept_name, title
+ORDER BY dept_name, title;
